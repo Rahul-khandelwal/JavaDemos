@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = JavaVersion.VERSION_14
+targetCompatibility = JavaVersion.VERSION_14
+
+mainClassName = 'main.JepTester'
+applicationDefaultJvmArgs = ["-XX:+ShowCodeDetailsInExceptionMessages"]
+
+repositories {
+    jcenter()
+}
