@@ -4,6 +4,14 @@ apply plugin: 'application'
 sourceCompatibility = JavaVersion.VERSION_14
 targetCompatibility = JavaVersion.VERSION_14
 
+tasks.withType(JavaCompile) {
+    options.compilerArgs += "--enable-preview"
+}
+
+tasks.withType(JavaExec) {
+    jvmArgs += '--enable-preview'
+}
+
 mainClassName = 'main.JepTester'
 applicationDefaultJvmArgs = ["-XX:+ShowCodeDetailsInExceptionMessages"]
 
