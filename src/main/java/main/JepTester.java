@@ -1,6 +1,6 @@
 package main;
 
-import jeps.jep_358.HelpfulNullPointerExceptions;
+import jeps.jep_378.TextBlocks;
 
 /**
  *
@@ -12,8 +12,9 @@ public class JepTester {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new HelpfulNullPointerExceptions().demo1();
-        new HelpfulNullPointerExceptions().demo2();
+        System.out.println(TextBlocks.htmlTextBlock());
+        System.out.println(TextBlocks.javascriptTextBlock());
+        System.out.println("Blocks ended");
     }
     
 }
