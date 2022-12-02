@@ -1,5 +1,5 @@
 # JavaDemos
-Demos for the new java features added after JDK 11.
+Demos for the new java features added after JDK 8.
 
 
 Included demos
@@ -8,6 +8,6 @@ Included demos
     Text Blocks (JEP 378)
     
 
-Command to run with java 14
+Command to run with specific java version
     
     .\gradlew clean build -Dorg.gradle.java.home=PATH_TO_JAVA_HOME
